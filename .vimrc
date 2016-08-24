@@ -14,12 +14,13 @@
  " Let NeoBundle manage NeoBundle
  " Required:
  NeoBundleFetch 'Shougo/neobundle.vim'
- NeoBundleFetch 'Shougo/unite.vim'
- NeoBundleFetch 'Shougo/neocomplete'
- NeoBundleFetch 'Shougo/neosnippet'
- NeoBundleFetch 'The-NERD-tree'
- NeoBundleFetch 'rails.vim'
- NeoBundleFetch 'dbext.vim'
+ NeoBundle 'Shougo/unite.vim'
+ NeoBundle 'Shougo/neocomplete'
+ NeoBundle 'Shougo/neosnippet'
+ NeoBundle 'Shougo/neosnippet-snippets'
+ NeoBundle 'scrooloose/nerdtree'
+ NeoBundle 'rails.vim'
+ NeoBundle 'dbext.vim'
 
  " My Bundles here:
  " Refer to |:NeoBundle-examples|.
@@ -33,3 +34,6 @@
  " If there are uninstalled bundles found on startup,
  " this will conveniently prompt you to install them.
  NeoBundleCheck
+
+" Plugin key-mappings.
+ map <C-n> :NERDTreeToggle<CR>
