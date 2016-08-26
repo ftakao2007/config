@@ -9,6 +9,9 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+### git
+unset SSH_ASKPASS
+
 ### bundler
 alias be="bundle exec"
 alias berr="bundle exec rake routes"
