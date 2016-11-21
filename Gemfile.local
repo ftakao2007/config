@@ -19,7 +19,7 @@ gem 'debase', '0.2.2.beta8'
 gem 'ruby-debug-ide', '0.6.1.beta2'
 
 ### Rspec
-group :test do
+group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
 end
