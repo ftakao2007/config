@@ -17,6 +17,10 @@ eval_gemfile "Gemfile"
 gem 'debase', '0.2.2.beta8'
 gem 'ruby-debug-ide', '0.6.1.beta2'
 
+### Rubymine debug (Ruby1.9)
+#gem 'ruby-debug-ide', '0.6.1.beta2'
+#gem 'ruby-debug-base19x', '0.11.31'
+
 ### Rspec
 group :development, :test do
   gem 'rspec-rails'
