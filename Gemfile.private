@@ -4,22 +4,28 @@
 ### default
 eval_gemfile "Gemfile"
 
-### custom
-#gem 'rb-readline'
+### Rubymine debug
+gem 'debase', '0.2.2.beta8'
+gem 'ruby-debug-ide', '0.6.1.beta2'
+
+### Rubymine debug (Ruby1.9, 動きません)
+### $ sudo gem install debugger-ruby_core_source -v '1.3.8'
+#gem 'ruby-debug-ide', '0.6.1.beta2'
+#gem 'ruby-debug-base19x', '0.11.31'
 
 ### pry
 #gem 'pry-rails'
 #gem 'pry-doc'
 #gem 'pry-byebug'
 #gem 'pry-stack_explorer'
+#gem 'rb-readline'
 
-### Rubymine debug
-gem 'debase', '0.2.2.beta8'
-gem 'ruby-debug-ide', '0.6.1.beta2'
-
-### Rubymine debug (Ruby1.9)
-#gem 'ruby-debug-ide', '0.6.1.beta2'
-#gem 'ruby-debug-base19x', '0.11.31'
+### pry(Ruby1.X)
+#gem 'pry-rails'
+#gem 'pry-doc'
+#gem 'pry-debugger'
+#gem 'pry-stack_explorer'
+#gem 'rb-readline'
 
 ### Rspec
 group :development, :test do
