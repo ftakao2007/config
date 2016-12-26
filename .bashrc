@@ -28,3 +28,8 @@ dexec()
 {
 	docker exec -it $1 /bin/bash --login
 }
+
+### kubernetes
+alias  kgpods="kubectl get pods"
+alias  kgsr="kubectl get services"
+alias  kgdep="kubectl get deployments"
