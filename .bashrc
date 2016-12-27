@@ -31,5 +31,7 @@ dexec()
 
 ### kubernetes
 alias  kgpods="kubectl get pods --all-namespaces"
-alias  kgserv="kubectl get services"
-alias  kgdep="kubectl get deployments"
+alias  kgpodsn="kubectl get pods --namespace"
+alias  kgserv="kubectl get services --all-namespaces"
+alias  kgservn="kubectl get services --namespace"
+alias  kgdep="kubectl get deployments --all-namespaces"
