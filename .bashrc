@@ -28,6 +28,18 @@ dexec()
 {
 	docker exec -it $1 /bin/bash --login
 }
+dcpupd()
+{
+	sudo docker-compose -f $1 up -d
+}
+dcpstop()
+{
+	sudo docker-compose -f $1 stop
+}
+dcprmf()
+{
+	sudo docker-compose -f $1 rm -f
+}
 
 ### kubernetes
 alias kgpods="kubectl get pods --all-namespaces"
